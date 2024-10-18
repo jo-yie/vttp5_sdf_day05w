@@ -76,7 +76,7 @@ public class LanguageModel {
 
     }
 
-    public void getNextWord(String current) {
+    public String getNextWord(String current) {
 
         // get current word from outer map 
         Map<String, Integer> temp;
@@ -95,7 +95,7 @@ public class LanguageModel {
         }
 
         // highest count = next word 
-        System.out.println(nextWord);
+        return(nextWord);
 
     }
 
